@@ -1,0 +1,43 @@
+{
+    "name": "tyhpdef/symfony-event-dispatcher-contracts-impl",
+    "description": "Implementation package for tyhpdef/symfony-event-dispatcher-contracts. Require tyhpdef/symfony-event-dispatcher-contracts, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.7.1.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/psr-event-dispatcher": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/symfony-event-dispatcher-contracts"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/event-dispatcher-contracts": "3.7.1"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/psr-event-dispatcher": "@dev"
+    }
+}
